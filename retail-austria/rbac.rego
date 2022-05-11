@@ -16,7 +16,7 @@ allow {
 user_is_manager {
   some i
 
-  user := data.retail-austria.users[input.user]
+  user := data.retailaustria.users[input.user]
 
   user.roles[i] == "manager"
   user.department == input.department
