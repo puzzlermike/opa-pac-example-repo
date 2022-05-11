@@ -7,7 +7,7 @@ allow {
 allow {
   some i
 
-  user := data.users[input.user]
+  user := data.retail-austria.users[input.user]
 
   user.roles[i] == input.role
   user.department == input.department
@@ -16,7 +16,7 @@ allow {
 user_is_manager {
   some i
 
-  user := data.users[input.user]
+  user := data.retail-austria.users[input.user]
 
   user.roles[i] == "manager"
   user.department == input.department
