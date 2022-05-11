@@ -7,7 +7,7 @@ allow {
 allow {
   some i
 
-  user := data.retail-austria.users[input.user]
+  user := data.retailaustria.users[input.user]
 
   user.roles[i] == input.role
   user.department == input.department
