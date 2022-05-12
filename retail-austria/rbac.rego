@@ -1,5 +1,7 @@
 package retail.austria.rbac
 
+default allow = false
+
 allow {
   user_is_manager
 }
